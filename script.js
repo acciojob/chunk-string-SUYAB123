@@ -1,5 +1,5 @@
-function stringChop(str, size) {
-  if (!str || size <= 0) {
+function chunkString(str, size) {
+  if (!str) {
     return [];
   }
 
@@ -11,6 +11,8 @@ function stringChop(str, size) {
   return chunks;
 }
 
+
+// Do not change the code below
 const str = prompt("Enter String.");
-const size = parseInt(prompt("Enter Chunk Size."), 10); 
-alert(stringChop(str, size).join(", ")); 
+const size = prompt("Enter Chunk Size.");
+alert(stringChop(str, size));
